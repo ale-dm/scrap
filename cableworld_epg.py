@@ -156,7 +156,7 @@ def main():
     p.add_argument("--channel-id", default=env("CHANNEL_ID", "Telecrevillent"),
                    help="debe coincidir con el tvg-id del m3u")
     p.add_argument("--channel-name", default=env("CHANNEL_NAME", "Telecrevillent"))
-    p.add_argument("--logo", default=env("CHANNEL_LOGO"))
+    p.add_argument("--logo", default=env("CHANNEL_LOGO", "https://hlsnov.cableworld.es/logo.png"))
     p.add_argument("--last-minutes", type=int, default=int(env("LAST_MINUTES", "60")),
                    help="duración asumida del último programa (la web no da hora de fin)")
     p.add_argument("--serve", action="store_true")

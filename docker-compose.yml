@@ -6,6 +6,7 @@ services:
     environment:
       CHANNEL_ID: "Telecrevillent"   # = tvg-id del canal en el m3u
       CHANNEL_NAME: "Telecrevillent"
+      CHANNEL_LOGO: "https://hlsnov.cableworld.es/logo.png"
       INTERVAL_HOURS: "6"
     ports:
       - "${EPG_PORT:-8099}:8080"
