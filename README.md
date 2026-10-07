@@ -14,7 +14,7 @@ python cableworld_epg.py -o epg.xml
 docker compose up -d --build
 ```
 
-Regenera el XML cada 12 h y lo sirve en `http://<host>:8099/epg.xml`. Si la web falla, conserva el último XML válido.
+Regenera el XML cada 24 h y lo sirve en `http://<host>:8099/epg.xml`. Si la web falla, conserva el último XML válido.
 
 ## Dispatcharr
 
