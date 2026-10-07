@@ -161,7 +161,7 @@ def main():
                    help="duración asumida del último programa (la web no da hora de fin)")
     p.add_argument("--serve", action="store_true")
     p.add_argument("--port", type=int, default=int(env("PORT", "8080")))
-    p.add_argument("--interval", type=float, default=float(env("INTERVAL_HOURS", "6")))
+    p.add_argument("--interval", type=float, default=float(env("INTERVAL_HOURS", "12")))
     args = p.parse_args()
     serve(args) if args.serve else generate(args)
 
