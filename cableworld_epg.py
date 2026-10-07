@@ -153,9 +153,9 @@ def main():
     p.add_argument("--url", default=env("EPG_URL", DEFAULT_URL))
     p.add_argument("--input", help="HTML local en vez de descargar (pruebas)")
     p.add_argument("-o", "--output", default=env("EPG_OUTPUT", "epg.xml"))
-    p.add_argument("--channel-id", default=env("CHANNEL_ID", "CableworldCrevillent.es"),
+    p.add_argument("--channel-id", default=env("CHANNEL_ID", "Telecrevillent"),
                    help="debe coincidir con el tvg-id del m3u")
-    p.add_argument("--channel-name", default=env("CHANNEL_NAME", "Cableworld Crevillent"))
+    p.add_argument("--channel-name", default=env("CHANNEL_NAME", "Telecrevillent"))
     p.add_argument("--logo", default=env("CHANNEL_LOGO"))
     p.add_argument("--last-minutes", type=int, default=int(env("LAST_MINUTES", "60")),
                    help="duración asumida del último programa (la web no da hora de fin)")

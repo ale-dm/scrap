@@ -4,8 +4,8 @@ services:
     container_name: cableworld-epg
     restart: unless-stopped
     environment:
-      CHANNEL_ID: "CableworldCrevillent.es"   # = tvg-id del canal en el m3u
-      CHANNEL_NAME: "Cableworld Crevillent"
+      CHANNEL_ID: "Telecrevillent"   # = tvg-id del canal en el m3u
+      CHANNEL_NAME: "Telecrevillent"
       INTERVAL_HOURS: "6"
     ports:
       - "8080:8080"
